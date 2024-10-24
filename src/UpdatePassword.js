@@ -15,8 +15,7 @@ function UpdatePassword({ onBack }) {
     }
 
     try {
-      // Make an API call to update the password
-      const response = await axios.post(
+      const response = await axios.put(
         "https://e-commerce-backend-lc8o.onrender.com/users/reset-password",
         {
           newPassword,
