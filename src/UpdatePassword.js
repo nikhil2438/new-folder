@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 
-function UpdatePassword({ onBack }) {
+function UpdatePassword() {
   const [newPassword, setNewPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [message, setMessage] = useState("");
@@ -34,9 +34,6 @@ function UpdatePassword({ onBack }) {
 
   return (
     <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-sm">
-      <button onClick={onBack} className="text-blue-500 hover:underline mb-4">
-        Back
-      </button>
       <h2 className="text-2xl font-bold mb-6 text-center">Reset Password</h2>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
