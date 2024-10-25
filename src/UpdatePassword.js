@@ -16,7 +16,7 @@ function UpdatePassword({ onBack }) {
 
     try {
       const response = await axios.put(
-        "https://e-commerce-backend-lc8o.onrender.com/users/reset-password",
+        "https://ever-deal.onrender.com/users/reset-password",
         {
           newPassword,
         }
